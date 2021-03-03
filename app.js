@@ -31,8 +31,10 @@ if(!isProduction) {
 mongoose.connect('mongodb://localhost/passport-tutorial');
 mongoose.set('debug', true);
 
-//Models & Routes
+//models & routes
 require('./models/Users');
+require('./config/passport');
+//app.use(require('./routes'));
 
 //Error handlers & middlewares
 if(!isProduction) {
@@ -59,4 +61,4 @@ app.use((err, req, res) => {
   });
 });
 
-app.listen(8082, () => console.log('Server running on http://localhost:8000/'));
+app.listen(8800, () => console.log('Server running on http://localhost:8800/'));
