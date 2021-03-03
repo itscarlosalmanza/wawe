@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+
+    },
+
+       {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+    },
+
+     {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+    } ,
+    {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+    },
+
+    {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+    } ,
+    {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+ } ,
+ 
+ {
+        "title": "Spaghetti",
+        "image": "",
+        "ingredients": ["pasta", "noodles", "sauce"],
+        "instructions": "lorem ipsum"
+
+    }
+]
