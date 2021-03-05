@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "wawe",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "What are we eating?",
   "main": "server.js",
   "scripts": {
     "devStart": "nodemon server.js",
@@ -15,11 +15,10 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "dotenv": "^8.2.0",
-    "nodemon": "^1.19.4"
+  "bugs": {
+    "url": "https://github.com/itscarlosalmanza/wawe/issues"
   },
+  "homepage": "https://github.com/itscarlosalmanza/wawe#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
@@ -36,6 +35,10 @@
     "mongoose": "^5.11.18",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-google-oauth": "^2.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
   }
 }
