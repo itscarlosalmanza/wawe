@@ -16,14 +16,14 @@ const db = require('./config/keys').mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(
-    db,
-      {
-          useNewUrlParser: true,
-          useUnifiedTopology: true
-      }
-  )
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+    process.env.MONGODB_URI || 'mongodb://localhost/wawe',
+     {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
+       useFindAndModify: false
+     }
+   );
 
 // EJS
 app.use(expressLayouts);
