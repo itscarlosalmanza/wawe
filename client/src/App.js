@@ -9,7 +9,7 @@ import CardData from './components/CardData'
 function App() {
   return (
     <div className="App">
-      <h1>What are we eating?</h1>
+      {/* <h1>What are we eating?</h1> */}
       <div class="ui orange inverted segment">
   <div class="ui inverted secondary pointing menu">
     <a class="active item">
