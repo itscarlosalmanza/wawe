@@ -1,33 +1,26 @@
 import React from "react";
 import { Card, Image, Button } from "semantic-ui-react"
 
-function CardData(props) {
+function CardData({title, image, ingredients, instructions}) {
     return (
-       
- <div class="ui card">
-      <div class="image">
-        <img src="/images/avatar2/large/kristy.png"></img>
-        <div class="content">
-          <a class="header">Kristy</a>
-          <div class="meta">
-            <span class="date">Joined in 2013</span>
+      <div class="ui card">
+        <div class="image">
+                <img src={image}></img>
+          <div class="content">
+                    <a class="header">{title}</a>
+            <div class="meta">
+                        <span class="instructions">{instructions}</span>
+            </div>
+            <div class="ingredients">
+                        {ingredients}
+            </div>
           </div>
-          <div class="description">
-            Kristy is an art director living in New York.
-          </div>
-        </div>
-        <div class="extra content">
-          <a>
-            <i class="user icon"></i>
-            22 Friends
-          </a>
-        </div>
-      </div>
+            </div>
+            <div class="ui bottom attached button">
+      <i class="add icon"></i>
+      Add to Favorites
     </div>
-
-
-
+      </div>
     );
-}
-
-export default CardData;
+  }
+  export default CardData;
