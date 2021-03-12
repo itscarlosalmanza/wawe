@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//  this needs to be dynamically created for each user and attached to the user via email provided
-const userRecipes = new mongoose.Schema({
+
+const userRecipesSchema = new Schema({
 
     name: {
         type: String,
@@ -15,6 +15,6 @@ const userRecipes = new mongoose.Schema({
 
 });
 
-const userRecipes = mongoose.model;('', userRecipesSchema);
+const userRecipes = mongoose.model('userRecipes', userRecipesSchema);
 
 module.exports = userRecipes;
