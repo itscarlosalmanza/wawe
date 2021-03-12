@@ -10,13 +10,15 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: backgroundImg }}>
       {/* <h1>What are we eating?</h1> */}
-      <div class="ui orange inverted segment">
-        <div class="ui inverted secondary pointing menu">
-          <a class="active item">Home</a>
-          <a class="item">Recipes</a>
-          <a class="item">Favorites</a>
+
+        <div class="ui visible right vertical labeled icon menu thin sidebar">
+        <a class="active item" id="test">
+          <i class="home icon"></i>Home</a>
+        <a class="item" id="test">
+          <i class="book icon"></i>Recipes</a>
+        <a class="item" id="test">
+          <i class="heart icon"></i>Favorites</a>
         </div>
-      </div>
       <div className="RecipeCard">
       {db.map((db) => (
         <CardData

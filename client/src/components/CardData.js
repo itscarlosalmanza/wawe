@@ -2,8 +2,10 @@ import React from "react";
 import { Card, Image, Button } from "semantic-ui-react"
 
 function CardData({title, image, ingredients, instructions}) {
-    return (
-      <div class="ui card">
+  return (
+    <div class="ui 1 column grid">
+      <div class="column">
+      <div class="ui fluid card">
         <div class="image">
                 <img src={image}></img>
           <div class="content">
@@ -20,7 +22,9 @@ function CardData({title, image, ingredients, instructions}) {
       <i class="add icon"></i>
       Add to Favorites
     </div>
+        </div>
       </div>
+    </div>
     );
   }
   export default CardData;
