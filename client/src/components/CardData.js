@@ -18,10 +18,22 @@ function CardData({title, image, ingredients, instructions}) {
             </div>
           </div>
             </div>
-            <div class="ui bottom attached button">
+             <div class="ui labeled button" tabindex="0">
+  <div class="ui red button">
+    <i class="heart icon"></i>  Add to Favorites
+  </div>
+  <div class="ui right floated animated fade button" tabindex="0">
+  <div class="visible content">New Recipe</div>
+  <div class="hidden content">
+    Click Me
+  </div>
+</div>
+</div>
+       {/* <div class="ui bottom attached button">
       <i class="add icon"></i>
       Add to Favorites
-    </div>
+    </div> */} 
+    {/* removed favorite button to replace with red favs button -AR */}
         </div>
       </div>
     </div>
