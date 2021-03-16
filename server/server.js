@@ -7,7 +7,7 @@ const passport = require("./passport/setup");
 const auth = require("./routes/auth");
 
 const app = express();
-const PORT = 8080;
+const PORT = 5555;
 const MONGO_URI = "mongodb://127.0.0.1:27017/wawe";
 
 mongoose
@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 // Express Session
 app.use(
     session({
-        secret: "Secrets are fun",
+        secret: "very secret this is",
         resave: false,
         saveUninitialized: true,
         store: new MongoStore({ mongooseConnection: mongoose.connection })
@@ -35,6 +35,6 @@ app.use(passport.session());
 
 // Routes
 app.use("/api/auth", auth);
-app.get("/", (req, res) => res.send("Welcome WAWE user!"));
+app.get("/", (req, res) => res.send("Good monring sunshine!"));
 
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}!`));
