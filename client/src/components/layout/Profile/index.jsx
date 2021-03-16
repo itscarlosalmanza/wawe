@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-import { ResponsiveHeader4, MarginedRow } from "./styles";
-
-import { DividerRow } from "../../styles";
+import { ResponsiveHeader4 } from "./styles";
 
 const Profile = () => {
     const [referrals, setReferrals] = useState(0);
@@ -11,7 +9,7 @@ const Profile = () => {
     return (
         <Container>
             <ResponsiveHeader4>
-                Welcome!
+                Welcome! Here you can find a list of your favorite recipes!
             </ResponsiveHeader4>
         
             

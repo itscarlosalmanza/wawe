@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 // Express Session
 app.use(
     session({
-        secret: "very secret this is",
+        secret: "Secrets are fun",
         resave: false,
         saveUninitialized: true,
         store: new MongoStore({ mongooseConnection: mongoose.connection })
@@ -35,6 +35,6 @@ app.use(passport.session());
 
 // Routes
 app.use("/api/auth", auth);
-app.get("/", (req, res) => res.send("Good monring sunshine!"));
+app.get("/", (req, res) => res.send("Welcome WAWE user!"));
 
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}!`));
