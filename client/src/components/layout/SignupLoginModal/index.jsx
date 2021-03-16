@@ -52,6 +52,8 @@ const SignUpLoginForm = () => {
                             }}
                             required
                         />
+                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                        <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
                     </Col>
                 </Row>
             </Form.Group>
@@ -67,6 +69,22 @@ const SignUpLoginForm = () => {
                             placeholder="Password"
                             onChange={e => setPassword(e.target.value)}
                         />
+                        <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                    </Col>
+                </Row>
+            </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+                <Row>
+                    <Col xs="2" sm="1">
+                        <Form.Check type="checkbox" />
+                    </Col>
+                    <Col xs="10" sm="11">
+                        <Form.Label>
+                            <MutedSpan>
+                                I hereby confirm that the referral app is allowed to send me emails, up until I
+                                unsuscribe
+                            </MutedSpan>
+                        </Form.Label>
                     </Col>
                 </Row>
             </Form.Group>

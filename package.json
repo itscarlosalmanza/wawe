@@ -1,44 +1,16 @@
 {
-  "name": "wawe",
-  "version": "1.0.0",
-  "description": "What are we eating?",
-  "main": "server.js",
-  "scripts": {
-    "devStart": "nodemon server.js",
-    "start": "npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "nodemon server.js",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/itscarlosalmanza/wawe/issues"
-  },
-  "homepage": "https://github.com/itscarlosalmanza/wawe#readme",
-  "dependencies": {
-    "ajax": "0.0.4",
-    "axios": "^0.21.1",
-    "bcryptjs": "^2.4.3",
-    "connect-flash": "^0.1.1",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
-    "express-jwt": "^6.0.0",
-    "express-layout": "^0.1.0",
-    "express-session": "^1.17.1",
-    "if-env": "^1.0.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.18",
-    "morgan": "^1.10.0",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.7"
-  }
+    "name": "social-login-root-folder",
+    "version": "1.0.0",
+    "description": "This is the root project for our frontend and backend",
+    "main": "index.js",
+    "repository": "https://github.com/FBosler/fb-tutorial-social-login",
+    "author": "Fabian Bosler <fbosler@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev-start": "concurrently \"cd server && yarn nodemon server.js\" \"cd client && yarn start\""
+    },
+    "devDependencies": {
+        "concurrently": "^5.1.0"
+    }
 }

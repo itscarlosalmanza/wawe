@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
+// import styles from "App.css"
 import {
     LandingBackground,
     PaddedCol,
     ResponsiveHeader2,
     ResponsiveHeader4,
-    ResponsiveParagraph,
     FullRow,
     LoginButton,
     VerticalCenterWrapper
@@ -22,13 +22,12 @@ const Landing = () => {
             <LandingBackground className={"z-depth-5"} url={URL}>
                 <FullRow>
                     <PaddedCol xs={{ span: 10, offset: 1 }} sm={{ span: 5, offset: 1 }}>
-                        <ResponsiveHeader2></ResponsiveHeader2>
-                        <ResponsiveParagraph></ResponsiveParagraph>
+                        <ResponsiveHeader2>Welcome to the WAWE App!</ResponsiveHeader2>
                     </PaddedCol>
                     <PaddedCol xs={{ span: 10, offset: 1 }} sm={{ span: 5, offset: 1 }}>
                         <VerticalCenterWrapper>
                             <LoginButton size="lg" onClick={() => setShow(true)}>
-                                Welcome to WAWE{" "}
+                                Join WAWE{" "}
                                 <span role="img" aria-label="rocket">
                                     🚀
                                 </span>
@@ -39,6 +38,9 @@ const Landing = () => {
                 <SignupLoginModal show={show} setShow={setShow} />
             </LandingBackground>
 
+            <Container style={{ minHeight: "900px" }}>
+                
+            </Container>
         </div>
     );
 };
