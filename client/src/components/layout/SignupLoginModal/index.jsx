@@ -13,6 +13,7 @@ import {
     SubmitButtom
 } from "./styles";
 
+
 const SignUpLoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -28,6 +29,8 @@ const SignUpLoginForm = () => {
             .post("/api/auth/register_login", userData)
             .then(res => {
                 console.log(res);
+
+                
             })
             .catch(err => {
                 console.log(err);
@@ -89,7 +92,7 @@ const SignUpLoginForm = () => {
                 </Row>
             </Form.Group>
             <VerticalCenterWrapper>
-                <SubmitButtom type="submit">Submit</SubmitButtom>
+                <SubmitButtom type="submit" href="/">Submit</SubmitButtom>
             </VerticalCenterWrapper>
         </Form>
     );
