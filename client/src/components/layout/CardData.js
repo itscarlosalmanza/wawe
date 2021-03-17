@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Image, Button } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
+import getUserRecipes from "../../controllers/API"
 
 function CardData({ title, image, ingredients, instructions }) {
   return (

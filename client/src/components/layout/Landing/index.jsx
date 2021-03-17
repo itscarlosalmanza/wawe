@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
+import logo from "../../../assets/android-chrome-192x192.png"
 // import styles from "App.css"
 import {
     LandingBackground,
@@ -46,7 +47,7 @@ const Landing = () => {
                         <CardData
                     key={db.id}
                     title={db.title}
-                    image={db.image}
+                    image={logo}
                     ingredients={db.ingredients}
                     instructions={db.instructions}
                 />))}
