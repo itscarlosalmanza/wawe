@@ -1,21 +1,22 @@
-
 body {
-  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brooke-lark-08bOYnH_r_E-unsplash.jpg") no-repeat center center!important;
+  background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brooke-lark-08bOYnH_r_E-unsplash.jpg")
+    no-repeat center center !important;
   background-size: cover !important;
+}
 
-.RecipeCard {
+/* .RecipeCard {
   margin-left: 45%;
   margin-top: 5%;
   position: fixed;
   
-}
+} */
 
 .ui.card {
   text-align: center;
 }
 
-
-a.active.item, a.item {
+a.active.item,
+a.item {
   margin: 20px 5px;
 }
 
@@ -33,20 +34,17 @@ a.active.item, a.item {
   box-shadow: 0 0 20px rgb(34 36 38 / 15%);
 }
 
-}
-
 .RecipeCard {
   margin-left: 45%;
   margin-top: 5%;
-  
 }
 
 .ui.card {
   text-align: center;
 }
 
-
-a.active.item, a.item {
+a.active.item,
+a.item {
   margin: 20px 5px;
 }
 
