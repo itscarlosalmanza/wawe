@@ -11,6 +11,8 @@ import {
     VerticalCenterWrapper
 } from "./styles";
 import SignupLoginModal from "../SignupLoginModal";
+import CardData from "../CardData"
+import db from "../../../db/db.json"
 
 const URL = "https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brooke-lark-08bOYnH_r_E-unsplash.jpg";
 
@@ -39,7 +41,17 @@ const Landing = () => {
             </LandingBackground>
 
             <Container style={{ minHeight: "900px" }}>
+                <div className="RecipeCard">
+                    {db.map((db) => (
+                        <CardData
+                    key={db.id}
+                    title={db.title}
+                    image={db.image}
+                    ingredients={db.ingredients}
+                    instructions={db.instructions}
+                />))}
                 
+                </div>
             </Container>
         </div>
     );
