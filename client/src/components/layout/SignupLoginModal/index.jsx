@@ -27,6 +27,7 @@ const SignUpLoginForm = () => {
         axios
             .post("/api/auth/register_login", userData)
             .then(res => {
+                
                 console.log(res);
             })
             .catch(err => {
@@ -68,6 +69,7 @@ const SignUpLoginForm = () => {
                             type="password"
                             placeholder="Password"
                             onChange={e => setPassword(e.target.value)}
+                            
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Col>
@@ -89,7 +91,7 @@ const SignUpLoginForm = () => {
                 </Row>
             </Form.Group>
             <VerticalCenterWrapper>
-                <SubmitButtom type="submit">Submit</SubmitButtom>
+                <SubmitButtom type="submit" href="/">Submit</SubmitButtom>
             </VerticalCenterWrapper>
         </Form>
     );

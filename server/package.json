@@ -10,7 +10,7 @@
         "start": "node server.js",
         "server": "nodemon server.js",
         "client": "npm start --prefix client",
-        "dev": "node server.js"
+        "dev": "concurrently \"npm run client\" \"npm run server\""
     },
     "devDependencies": {
         "chalk": "^3.0.0",
