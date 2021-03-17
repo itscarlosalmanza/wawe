@@ -2,7 +2,7 @@
 body {
   background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brooke-lark-08bOYnH_r_E-unsplash.jpg") no-repeat center center!important;
   background-size: cover !important;
-
+}
 .RecipeCard {
   margin-left: 45%;
   margin-top: 5%;
@@ -31,8 +31,6 @@ a.active.item, a.item {
   width: 80%;
   height: 90%;
   box-shadow: 0 0 20px rgb(34 36 38 / 15%);
-}
-
 }
 
 .RecipeCard {

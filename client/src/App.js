@@ -4,7 +4,6 @@ import Landing from "./components/layout/Landing";
 import About from "./components/layout/About";
 import Profile from "./components/layout/Profile";
 import Nav from "./components/layout/Nav";
-import Footer from "./components/layout/Footer";
 import logo from "./logo.svg";
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
@@ -31,7 +30,6 @@ const App = () => {
                 <Route exact path="/about">
                     <About />
                 </Route>
-                <Footer />
             </div>
         </Router>
     );
