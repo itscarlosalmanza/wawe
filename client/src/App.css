@@ -4,13 +4,6 @@ body {
   background-size: cover !important;
 }
 
-/* .RecipeCard {
-  margin-left: 45%;
-  margin-top: 5%;
-  position: fixed;
-  
-} */
-
 .ui.card {
   text-align: center;
 }
