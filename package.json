@@ -1,10 +1,10 @@
 {
-    "name": "social-login-root-folder",
+    "name": "what-are-we-eating",
     "version": "1.0.0",
     "description": "This is the root project for our frontend and backend",
     "main": "index.js",
-    "repository": "https://github.com/FBosler/fb-tutorial-social-login",
-    "author": "Fabian Bosler <fbosler@gmail.com>",
+    "repository": "https://github.com/itscarlosalmanza/wawe",
+    "author": "wawe",
     "license": "MIT",
     "private": true,
     "scripts": {
