@@ -36,28 +36,4 @@ const App = () => {
     );
 };
 
-// const App = () => {
-//   return (
-//     <div className="App" style={{ backgroundImage: backgroundImg }}>
-//       <div class="ui visible right vertical labeled icon menu thin sidebar">
-//         <a class="active item" id="test">
-//           <i class="home icon"></i>Home</a>
-//         <a class="item" id="test">
-//           <i class="book icon"></i>Recipes</a>
-//         <a class="item" id="test">
-//           <i class="heart icon"></i>Favorites</a>
-//       </div>
-//       <div className="RecipeCard">
-//         {db.map((db) => (
-//           <CardData
-//             key={db.id}
-//             title={db.title}
-//             image={db.image}
-//             ingredients={db.ingredients}
-//             instructions={db.instructions}
-//           />
-//         ))}
-//       </div>
-//     </div>
-
 export default App;
