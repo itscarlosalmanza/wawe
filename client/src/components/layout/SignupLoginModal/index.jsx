@@ -13,6 +13,7 @@ import {
     SubmitButtom
 } from "./styles";
 
+
 const SignUpLoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -29,6 +30,8 @@ const SignUpLoginForm = () => {
             .then(res => {
                 
                 console.log(res);
+
+                
             })
             .catch(err => {
                 console.log(err);
